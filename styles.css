@@ -1,2 +1,98 @@
 @import url('./styles/reset.css');
 @import url('./styles/variables.css');
+
+body {
+	background-color: var(--clr-white);
+	font-family: var(--ff-primary);
+}
+
+.signUp {
+	width: 100%;
+	max-width: 375px;
+	margin: 0 auto;
+
+	.wrapper {
+		padding: 2.5rem 1.5rem;
+
+		.content {
+			margin-bottom: 2.5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 1.5rem;
+
+			h1 {
+				font-size: var(--fs-heading-sm);
+				font-weight: var(--fw-bold);
+				line-height: 1;
+				color: var(--clr-darkNavy);
+			}
+
+			p {
+				font-size: var(--fs-body-lg);
+				font-weight: var(--fw-regular);
+				line-height: 1.5;
+				color: var(--clr-darkNavy);
+			}
+
+			ul li {
+				margin-bottom: 0.625rem;
+				display: flex;
+				align-items: flex-start;
+				gap: 1rem;
+			}
+
+			ul li img {
+				height: 21px;
+				width: 21px;
+			}
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+
+			label {
+				margin-bottom: 0.5rem;
+				font-size: var(--fs-body-sm);
+				font-weight: var(--fw-bold);
+				line-height: 1.5;
+				color: var(--clr-darkNavy);
+			}
+
+			input {
+				margin-bottom: 1.5rem;
+				width: 100%;
+				padding: 1rem 1.5rem;
+				border: 1px solid var(--clr-gray-25);
+				border-radius: 0.5rem;
+			}
+
+			input::placeholder {
+				font-size: var(--fs-body-lg);
+				font-weight: var(--fw-regular);
+				line-height: 1.5;
+				color: var(--clr-gray);
+			}
+
+			button {
+				width: 100%;
+				padding: 1rem;
+				background-color: var(--clr-darkNavy);
+				border: none;
+				border-radius: 0.5rem;
+				font-size: var(--fs-body-lg);
+				font-weight: var(--fw-bold);
+				line-height: 1.5;
+				color: var(--clr-white);
+			}
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}

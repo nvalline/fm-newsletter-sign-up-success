@@ -17,9 +17,10 @@
 	--clr-tomato: hsl(4, 100%, 67%);
 
 	/* Neutral */
-	--clr-darkSlateGray: hsl(234, 29%, 20%);
+	--clr-darkNavy: hsl(234, 29%, 20%);
 	--clr-charcoalGray: hsl(235, 18%, 26%);
 	--clr-gray: hsl(231, 7%, 60%);
+	--clr-gray-25: hsla(243, 28%, 13%, 0.25);
 	--clr-white: hsl(0, 0%, 100%);
 
 	/* ----- Typography ----- */
