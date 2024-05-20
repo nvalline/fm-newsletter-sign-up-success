@@ -6,6 +6,11 @@ body {
 	font-family: var(--ff-primary);
 }
 
+main,
+section {
+	min-height: 100vh;
+}
+
 .signUp {
 	width: 100%;
 	max-width: 375px;
@@ -77,22 +82,60 @@ body {
 				line-height: 1.5;
 				color: var(--clr-gray);
 			}
+		}
+	}
+}
 
-			button {
-				width: 100%;
-				padding: 1rem;
-				background-color: var(--clr-darkNavy);
-				border: none;
-				border-radius: 0.5rem;
-				font-size: var(--fs-body-lg);
+.signUpSuccess {
+	min-height: 100vh;
+	padding: 9.3125rem 1.5rem 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	.successContent {
+		img {
+			height: 64px;
+			width: 64px;
+			margin-bottom: 2.5rem;
+		}
+
+		h2 {
+			margin-bottom: 1.5rem;
+			font-size: var(--fs-heading-sm);
+			font-weight: var(--fw-bold);
+			line-height: 1;
+			color: var(--clr-darkNavy);
+		}
+
+		p {
+			font-size: var(--fs-body-lg);
+			font-weight: var(--fw-regular);
+			line-height: 1.5;
+			color: var(--clr-darkNavy);
+
+			span {
 				font-weight: var(--fw-bold);
-				line-height: 1.5;
-				color: var(--clr-white);
 			}
 		}
 	}
 }
 
+/* ----- Buttons ----- */
+.btnPrimary {
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--clr-darkNavy);
+	border: none;
+	border-radius: 0.5rem;
+	font-size: var(--fs-body-lg);
+	font-weight: var(--fw-bold);
+	line-height: 1.5;
+	color: var(--clr-white);
+}
+
+/* ----- Utilities ----- */
 .hidden {
 	display: none;
 }
