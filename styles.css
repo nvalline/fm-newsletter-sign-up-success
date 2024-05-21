@@ -2,13 +2,17 @@
 @import url('./styles/variables.css');
 
 body {
-	background-color: var(--clr-white);
+	background-color: var(--clr-paleNavy);
 	font-family: var(--ff-primary);
 }
 
 main,
 section {
 	min-height: 100vh;
+}
+
+article {
+	background-color: var(--clr-white);
 }
 
 .signUp {
@@ -84,6 +88,10 @@ section {
 			}
 		}
 	}
+
+	.desktopImage {
+		display: none;
+	}
 }
 
 .signUpSuccess {
@@ -133,6 +141,66 @@ section {
 	font-weight: var(--fw-bold);
 	line-height: 1.5;
 	color: var(--clr-white);
+	cursor: pointer;
+}
+
+/* ----- Media Queries ----- */
+@media (min-width: 62em) {
+	section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.signUp {
+		max-width: 928px;
+		padding: 1.5rem;
+		display: flex;
+		border-radius: 36px;
+
+		.mobileImage {
+			display: none;
+		}
+
+		.wrapper {
+			padding: 0 4rem 0 2.5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.content {
+				h1 {
+					font-size: var(--fs-heading-lg);
+				}
+			}
+
+			.form {
+				width: 100%;
+			}
+		}
+
+		.desktopImage {
+			display: inline-block;
+		}
+	}
+
+	.signUpSuccess {
+		min-height: auto;
+		max-width: 504px;
+		padding: 3rem 4rem 4rem;
+		border-radius: 36px;
+
+		.successContent {
+			h2 {
+				font-size: var(--fs-heading-lg);
+			}
+
+			p {
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
 }
 
 /* ----- Utilities ----- */

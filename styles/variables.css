@@ -14,14 +14,19 @@
 	/* ----- Colors ----- */
 
 	/* Primary */
-	--clr-tomato: hsl(4, 100%, 67%);
+	--clr-orange: hsl(15, 100%, 61%);
+	--clr-pink: hsl(346, 100%, 66%);
+	--clr-vermellion: hsl(4, 100%, 67%);
 
 	/* Neutral */
 	--clr-darkNavy: hsl(234, 29%, 20%);
-	--clr-charcoalGray: hsl(235, 18%, 26%);
+	--clr-paleNavy: hsl(235, 18%, 26%);
 	--clr-gray: hsl(231, 7%, 60%);
 	--clr-gray-25: hsla(243, 28%, 13%, 0.25);
 	--clr-white: hsl(0, 0%, 100%);
+
+	/* Gradient */
+	--clr-gradient: linear-gradient(var(--clr-orange), var(--clr-pink));
 
 	/* ----- Typography ----- */
 
