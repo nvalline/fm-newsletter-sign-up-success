@@ -17,6 +17,8 @@
 		</title>
 
 		<link rel="stylesheet" href="./styles.css" />
+
+		<script defer src="scripts.js"></script>
 	</head>
 	<body>
 		<main>
@@ -49,18 +51,20 @@
 								</li>
 							</ul>
 						</div>
-						<form class="form">
+						<form class="form" novalidate>
 							<div class="labelWrapper">
 								<label for="email">Email address</label>
 								<span id="errorToast" class="hidden">Valid Email Required</span>
+								<span id="successToast" class="hidden">Success!</span>
 							</div>
 							<input
 								id="email"
+								name="email"
 								type="email"
 								placeholder="email@company.com"
 								class=""
 							/>
-							<button type="submit" class="btnPrimary">
+							<button id="submitBtn" type="submit" class="btnPrimary">
 								Subscribe to monthly newsletter
 							</button>
 						</form>

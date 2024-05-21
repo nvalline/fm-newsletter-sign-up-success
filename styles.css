@@ -84,6 +84,13 @@ article {
 					line-height: 1.5;
 					color: var(--clr-vermellion);
 				}
+
+				.success {
+					font-size: var(--fs-body-sm);
+					font-weight: var(--fw-bold);
+					line-height: 1.5;
+					color: var(--clr-green);
+				}
 			}
 
 			input {
