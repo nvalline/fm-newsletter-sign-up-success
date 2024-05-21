@@ -20,6 +20,11 @@ article {
 	max-width: 375px;
 	margin: 0 auto;
 
+	.mobileImage {
+		height: auto;
+		width: 100%;
+	}
+
 	.wrapper {
 		padding: 2.5rem 1.5rem;
 
