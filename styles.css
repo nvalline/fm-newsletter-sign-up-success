@@ -64,12 +64,26 @@ article {
 			align-items: flex-start;
 			justify-content: space-between;
 
-			label {
+			.labelWrapper {
 				margin-bottom: 0.5rem;
-				font-size: var(--fs-body-sm);
-				font-weight: var(--fw-bold);
-				line-height: 1.5;
-				color: var(--clr-darkNavy);
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				label {
+					font-size: var(--fs-body-sm);
+					font-weight: var(--fw-bold);
+					line-height: 1.5;
+					color: var(--clr-darkNavy);
+				}
+
+				.error {
+					font-size: var(--fs-body-sm);
+					font-weight: var(--fw-bold);
+					line-height: 1.5;
+					color: var(--clr-vermellion);
+				}
 			}
 
 			input {
@@ -95,6 +109,16 @@ article {
 			input:active::placeholder,
 			input:focus::placeholder {
 				color: var(--clr-darkNavy);
+			}
+
+			.errorEmail {
+				background-color: var(--clr-vermellion-veryLight);
+				border: 1px solid var(--clr-vermellion);
+				color: var(--clr-vermellion);
+			}
+
+			.errorEmail::placeholder {
+				color: var(--clr-vermellion);
 			}
 		}
 	}
@@ -221,6 +245,7 @@ article {
 }
 
 /* ----- Utilities ----- */
+
 .hidden {
 	display: none;
 }

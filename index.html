@@ -50,8 +50,16 @@
 							</ul>
 						</div>
 						<form class="form">
-							<label for="email">Email address</label>
-							<input type="email" placeholder="email@company.com" />
+							<div class="labelWrapper">
+								<label for="email">Email address</label>
+								<span id="errorToast" class="hidden">Valid Email Required</span>
+							</div>
+							<input
+								id="email"
+								type="email"
+								placeholder="email@company.com"
+								class=""
+							/>
 							<button type="submit" class="btnPrimary">
 								Subscribe to monthly newsletter
 							</button>

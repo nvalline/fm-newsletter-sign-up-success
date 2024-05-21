@@ -18,6 +18,7 @@
 	--clr-pink: hsl(346, 100%, 66%);
 	--clr-vermellion: hsl(4, 100%, 67%);
 	--clr-vermellion-light: hsla(4, 100%, 67%, 0.5);
+	--clr-vermellion-veryLight: hsla(4, 100%, 67%, 0.15);
 
 	/* Neutral */
 	--clr-darkNavy: hsl(234, 29%, 20%);
