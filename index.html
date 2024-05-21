@@ -24,7 +24,7 @@
 		<main>
 			<section>
 				<!-- Sign-up form start -->
-				<article class="signUp">
+				<article id="signup" class="signUp">
 					<img
 						src="./assets/images/illustration-sign-up-mobile.svg"
 						alt=""
@@ -55,7 +55,6 @@
 							<div class="labelWrapper">
 								<label for="email">Email address</label>
 								<span id="errorToast" class="hidden">Valid Email Required</span>
-								<span id="successToast" class="hidden">Success!</span>
 							</div>
 							<input
 								id="email"
@@ -80,7 +79,7 @@
 				<!-- Sign-up form end -->
 
 				<!-- Success message start -->
-				<article class="signUpSuccess hidden">
+				<article id="signupSuccess" class="signUpSuccess hidden">
 					<div class="successContent">
 						<img
 							src="./assets/images/icon-success.svg"
@@ -95,7 +94,9 @@
 							button inside to confirm your subscription.
 						</p>
 					</div>
-					<button type="button" class="btnPrimary">Dismiss message</button>
+					<button id="successBtn" type="button" class="btnPrimary">
+						Dismiss message
+					</button>
 				</article>
 				<!-- Success message end -->
 			</section>

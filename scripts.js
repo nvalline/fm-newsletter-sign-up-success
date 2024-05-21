@@ -1,8 +1,10 @@
 const form = document.querySelector('.form');
 const errorToast = document.getElementById('errorToast');
-const successToast = document.getElementById('successToast');
 const emailInput = document.getElementById('email');
+const signUpForm = document.getElementById('signup');
+const signUpSuccessForm = document.getElementById('signupSuccess');
 const submitButton = document.getElementById('submitBtn');
+const successButton = document.getElementById('successBtn');
 
 const verifyEmailAddress = async (email) => {
 	const regex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/;
@@ -33,8 +35,11 @@ const handleNewsletterSignUpSubmit = async (e) => {
 	} else {
 		errorToast.className = 'hidden';
 		emailInput.className = '';
-		successToast.className = 'success';
+		signUpForm.className = 'signUp hidden';
+		signUpSuccessForm.className = 'signUpSuccess';
 	}
 };
 
 form.addEventListener('submit', handleNewsletterSignUpSubmit);
+
+successButton.addEventListener('click', () => location.reload());
