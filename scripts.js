@@ -5,6 +5,7 @@ const signUpForm = document.getElementById('signup');
 const signUpSuccessForm = document.getElementById('signupSuccess');
 const submitButton = document.getElementById('submitBtn');
 const successButton = document.getElementById('successBtn');
+const successEmail = document.getElementById('successEmail');
 
 const verifyEmailAddress = async (email) => {
 	const regex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,})$/;
@@ -37,6 +38,7 @@ const handleNewsletterSignUpSubmit = async (e) => {
 		emailInput.className = '';
 		signUpForm.className = 'signUp hidden';
 		signUpSuccessForm.className = 'signUpSuccess';
+		successEmail.innerText = data.email;
 	}
 };
 
