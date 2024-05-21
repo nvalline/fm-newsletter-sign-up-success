@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/newsletter-w-vanilla-css-and-js-RQYs5F9GMm)
 - Live Site URL: [Here](https://nv-newsletter-signup-success.netlify.app/)
 
 ## My process
