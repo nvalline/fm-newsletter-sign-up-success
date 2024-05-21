@@ -80,11 +80,21 @@ article {
 				border-radius: 0.5rem;
 			}
 
+			input:active,
+			input:focus {
+				border: 1px solid var(--clr-darkNavy);
+			}
+
 			input::placeholder {
 				font-size: var(--fs-body-lg);
 				font-weight: var(--fw-regular);
 				line-height: 1.5;
 				color: var(--clr-gray);
+			}
+
+			input:active::placeholder,
+			input:focus::placeholder {
+				color: var(--clr-darkNavy);
 			}
 		}
 	}
@@ -142,6 +152,13 @@ article {
 	line-height: 1.5;
 	color: var(--clr-white);
 	cursor: pointer;
+}
+
+.btnPrimary:active,
+.btnPrimary:focus,
+.btnPrimary:hover {
+	background-image: var(--clr-gradient);
+	box-shadow: 0 16px 32px var(--clr-vermellion-light);
 }
 
 /* ----- Media Queries ----- */
